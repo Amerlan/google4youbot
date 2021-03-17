@@ -34,7 +34,7 @@ async def send(inline_query):
 async def start(message):
     await bot.send_message(chat_id=message.chat.id,
                            text='Привет! Я не реагирую на команды тут, '
-                           'вызови меня в нужном тебе чате написав @google4youbot *свой запрос*', reply_markup=None)
+                           'вызови меня в нужном тебе чате написав @google4youbot *свой запрос*', reply_markup=types.ReplyKeyboardRemove())
     await bot.send_message(chat_id=message.chat.id, text='Пример: @google4youbot как это работает?')
 
 if __name__ == '__main__':
